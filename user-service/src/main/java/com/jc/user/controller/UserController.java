@@ -129,11 +129,11 @@ public class UserController {
 	}
 	
 	public ResponseEntity<Car> fallBackSaveCar(@PathVariable(name = "userId") Integer userId, @RequestBody Car car, RuntimeException exception) {
-		return new ResponseEntity("user with id: " + userId + " are not able to buy cars.", HttpStatus.OK);
+		return new ResponseEntity("user with id: " + userId + " are not allowed to buy cars.", HttpStatus.OK);
 	}
 	
 	public ResponseEntity<Motorcycle> fallBackSaveMotorcycle(@PathVariable(name = "userId") Integer userId, @RequestBody Motorcycle motorcycle, RuntimeException exception) {
-		return new ResponseEntity("user with id: " + userId + " are not able to buy motorcycles.", HttpStatus.OK);
+		return new ResponseEntity("user with id: " + userId + " are not allowed to buy motorcycles.", HttpStatus.OK);
 	}
 	
 	public ResponseEntity<Map<String, Object>> fallBackGetAll(@PathVariable(name = "userId") Integer userId, RuntimeException exception) {
