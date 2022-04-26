@@ -19,3 +19,9 @@ Conceptos revisados:
 
 Ejecutar Zipkin:
 java -jar zipkin-server-2.23.16-exec.jar
+
+Resources:
+- zipkin-server-2.23.16-exec.jar
+- Info
+
+https://drive.google.com/drive/folders/1biWr02AmsHLo-IjNWBt_wkVACVGrZ2e-?usp=sharing
